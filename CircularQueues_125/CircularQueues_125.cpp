@@ -3,7 +3,7 @@ using namespace std;
 
 class queues {
     int front, rear, max = 5;
-    int queues_array[5];
+    int queue_array[5];
 
 public:
     queues() {
@@ -24,6 +24,27 @@ public:
         }
 
         //cek apakah antrian kosong
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        }
+        else {
+            //jika rear berada diposisi akhir array,kembali ke awal array
+            if (rear == max - 1)
+                rear = 0;
+            else
+                rear = rear + 1;
+        }
+        queue_array[rear] = num;
+        
+    }
+    void remove() {
+        //cek apakah antrian kosong
+        if (front == -1) {
+            cout << "queue underflow\n";
+            return;
+        }
+        cout << "nthe element deleted from the queue is: " << queue_array[front] << "\n";
     }
 };
 

@@ -104,6 +104,16 @@ public:
 int main()
 {
     queues q;
+    char ch;
+
+    while (true) {
+        cout << "MENU" << endl;
+        cout << "1. implement insert operation" << endl;
+        cout << "2. implement delete operation" << endl;
+        cout << "3. display values" << endl;
+        cout << "4. exit" << endl;
+        cout << "5. enter your choice (1-4) : " << endl;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -138,7 +138,11 @@ int main()
             }
 
         }
+        catch (exeption& e) {
+            cout << "check for the values entered." << endl;
+        }
     }
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

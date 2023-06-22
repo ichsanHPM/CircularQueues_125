@@ -132,6 +132,10 @@ int main()
             case '4': {
                 return 0;
             }
+            defaut: {
+                    cout << "infalid option!!" << endl;
+                    break;
+            }
 
         }
     }

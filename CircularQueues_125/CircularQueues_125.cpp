@@ -121,6 +121,19 @@ int main()
                 q.insert();
                 break;
             }
+            case '2': {
+                q.remove();
+                break;
+            }
+            case '1': {
+                q.insert();
+                break;
+            }
+            case '1': {
+                q.insert();
+                break;
+            }
+
         }
     }
 }

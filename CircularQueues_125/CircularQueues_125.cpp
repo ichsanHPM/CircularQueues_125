@@ -129,9 +129,8 @@ int main()
                 q.display();
                 break;
             }
-            case '1': {
-                q.insert();
-                break;
+            case '4': {
+                return 0;
             }
 
         }

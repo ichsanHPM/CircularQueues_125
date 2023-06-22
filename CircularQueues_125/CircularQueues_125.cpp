@@ -113,6 +113,8 @@ int main()
         cout << "3. display values" << endl;
         cout << "4. exit" << endl;
         cout << "5. enter your choice (1-4) : " << endl;
+        cin >> ch;
+        cout << endl;
     }
 }
 

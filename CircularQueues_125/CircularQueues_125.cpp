@@ -70,6 +70,14 @@ public:
             return;
         }
 
+        cout << "\nelements in the queue are ...\n";
+
+        //jika front_position > rear position,iterasi dari front hingga rear
+        if (front_position <= rear_position) {
+            while (front_position <= rear_position) << "  ";
+            front_position++;
+        }
+        cout << endl;
     }
 };
 

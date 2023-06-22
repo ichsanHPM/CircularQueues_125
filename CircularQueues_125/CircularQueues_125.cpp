@@ -107,16 +107,17 @@ int main()
     char ch;
 
     while (true) {
-        cout << "MENU" << endl;
-        cout << "1. implement insert operation" << endl;
-        cout << "2. implement delete operation" << endl;
-        cout << "3. display values" << endl;
-        cout << "4. exit" << endl;
-        cout << "5. enter your choice (1-4) : " << endl;
-        cin >> ch;
-        cout << endl;
+        try {
+            cout << "MENU" << endl;
+            cout << "1. implement insert operation" << endl;
+            cout << "2. implement delete operation" << endl;
+            cout << "3. display values" << endl;
+            cout << "4. exit" << endl;
+            cout << "5. enter your choice (1-4) : " << endl;
+            cin >> ch;
+            cout << endl;
 
-        switch(ch) {
+            switch (ch) {
             case '1': {
                 q.insert();
                 break;
@@ -132,13 +133,13 @@ int main()
             case '4': {
                 return 0;
             }
-            defaut: {
+                defaut: {
                     cout << "infalid option!!" << endl;
                     break;
             }
-
         }
-        catch (exeption& e) {
+        }
+        catch (exception& e) {
             cout << "check for the values entered." << endl;
         }
     }
